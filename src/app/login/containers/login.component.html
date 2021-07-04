@@ -1,1 +1,21 @@
-<h1>login compontent</h1>
+
+<mat-card class='login'>
+
+  <form class="example-form">
+
+    <mat-form-field class='full-width' appearance='fill'>
+      <mat-label>Usuario</mat-label>
+      <input matInput name='usuario'>
+    </mat-form-field>
+
+
+    <mat-form-field class='full-width' appearance='fill'>
+      <mat-label>Contrasena</mat-label>
+      <input type='password' matInput name='password'>
+    </mat-form-field>
+
+    <div fxLayout='column'>
+      <button fxFlexAlign='end' type='submit' mat-raised-button color="primary">ENTRAR</button>
+    </div>
+  </form>
+</mat-card>
