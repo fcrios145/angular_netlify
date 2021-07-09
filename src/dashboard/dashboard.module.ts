@@ -2,11 +2,9 @@ import { NgModule } from '@angular/core'
 import { RouterModule } from '@angular/router'
 import { CommonModule } from '@angular/common'
 
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-
 import { DashboardComponent } from './containers/dashboard.component'
+import { MaterialModule } from '../app/material/material.module'
+
 
 
 @NgModule({
@@ -17,9 +15,8 @@ import { DashboardComponent } from './containers/dashboard.component'
     CommonModule,
     RouterModule,
 
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule
+    MaterialModule
+
   ],
   exports: [
     DashboardComponent

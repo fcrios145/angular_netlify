@@ -1,0 +1,29 @@
+<mat-toolbar>
+  <button  (click)="drawer.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Dolly</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>account_circle</mat-icon>
+  </button>
+</mat-toolbar>
+
+<mat-drawer-container  autosize>
+  <mat-drawer #drawer mode="side" opened='true' >
+    <div fxLayout='column'>
+      <a mat-button >Login</a>
+      <a mat-button >Usuarios</a>
+      <a mat-button >Agregar</a>
+      <a mat-button >Eliminar</a>
+    </div>
+  </mat-drawer>
+
+  <div fxLayout='column' class='content'>
+    <mat-card>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic perferendis nulla eveniet ducimus autem nisi facilis laboriosam, odio optio ad, minima necessitatibus sequi quibusdam vitae debitis non consequatur ut fugiat nemo. Voluptate blanditiis modi tempore iure maiores commodi? Enim voluptatum itaque accusantium sunt tenetur facere, deleniti exercitationem explicabo eos possimus deserunt modi ea nesciunt velit quisquam cum necessitatibus. Eaque assumenda corrupti officia voluptatibus nemo. Fugit, provident dolor deleniti perferendis natus ipsam ipsum iste minus sequi esse, earum at beatae sunt molestiae delectus doloremque eveniet labore illo non dignissimos totam maxime quis dolorum saepe. Voluptatibus cumque aspernatur libero fugiat consectetur veniam ad fuga, laborum vero quo exercitationem optio, itaque dolor est facilis, asperiores mollitia suscipit aliquid in beatae distinctio possimus quisquam rerum quod. Ea reiciendis, nam magnam, id amet nisi adipisci repellendus beatae nulla laboriosam accusamus ducimus accusantium ipsa harum consectetur voluptatem eligendi deleniti nostrum odit aspernatur consequatur. Deserunt, voluptatem similique.</p>
+    </mat-card>
+  </div>
+
+</mat-drawer-container>
+
